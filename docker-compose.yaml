@@ -6,6 +6,8 @@ services:
     restart: unless-stopped
     ports:
       - "5000:5000"
+    volumes:
+      - 13ft-log:/app
     healthcheck:
       test:
         - CMD
